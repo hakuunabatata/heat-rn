@@ -1,5 +1,6 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, TouchableOpacity } from 'react-native'
+import { UserPhoto } from '..'
 
 import LogoSvg from '../../assets/logo.svg'
 
@@ -10,7 +11,13 @@ export const Header = () => (
     <View style={styles.container}>
       <LogoSvg />
 
-      <Text>Sair</Text>
+      <View style={styles.logoutButton}>
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Sair</Text>
+        </TouchableOpacity>
+
+        <UserPhoto imageUri="" />
+      </View>
     </View>
   </>
 )
