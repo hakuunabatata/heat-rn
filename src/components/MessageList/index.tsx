@@ -3,6 +3,15 @@ import { ScrollView } from 'react-native'
 import { Message } from '../Message'
 import { styles } from './styles'
 
+const testUser = {
+  id: 'alfa',
+  text: 'test',
+  user: {
+    name: 'Usuario',
+    avatar_url: '',
+  },
+}
+
 export const MessageList = () => (
   <>
     <ScrollView
@@ -10,18 +19,15 @@ export const MessageList = () => (
       contentContainerStyle={styles.content}
       keyboardShouldPersistTaps="never"
     >
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
-      <Message />
+      <Message data={testUser} />
+      <Message data={testUser} />
+      <Message data={testUser} />
+      <Message data={testUser} />
+      <Message data={testUser} />
+      <Message data={testUser} />
+      <Message data={testUser} />
+      <Message data={testUser} />
+      <Message data={testUser} />
     </ScrollView>
   </>
 )
