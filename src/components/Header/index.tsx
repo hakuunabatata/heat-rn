@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, TouchableOpacity } from 'react-native'
-import { UserPhoto } from '..'
+import { UserPhoto } from '../UserPhoto'
 
 import LogoSvg from '../../assets/logo.svg'
 
